@@ -4,7 +4,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './index.css';
 import HomePage from './pages/HomePage';
 import VideoSearch from './pages/VideoSearch';
-import ImageSearch from './pages/ImageSearch';
+import Weather from './pages/Weather';
 import BaseLayout from './components/BaseLayout';
 
 
@@ -16,7 +16,7 @@ ReactDOM.render(
       <BaseLayout>
         <Switch>
           <Route exact path='/' component={HomePage} />
-          <Route path='/imagesearch' component={ImageSearch} />
+          <Route path='/Weather' component={Weather} />
           <Route path='/videosearch' component={VideoSearch} />
         </Switch>
       </BaseLayout>
