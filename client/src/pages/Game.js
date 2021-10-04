@@ -1,4 +1,6 @@
 import img1 from '../img/fish.jpg';
+import img2 from '../img/birds.jpg';
+import Counter from '../components/Counter';
 
 function Game(){
     
@@ -6,10 +8,12 @@ function Game(){
     return(
 
         <div >
-            <h4 className="fish">Count the Fish</h4>
-                <img src={img1} alt="" className="fishimg"/>
-                <h1>Counter</h1>
+            <h1>Game</h1>
+                <img src={img2} alt="" className="fishimg"/>
+                <h4 className="fish">Count the Birds</h4>
+                <Counter />
         </div>
+        
     )
 
 }

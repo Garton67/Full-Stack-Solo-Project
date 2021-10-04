@@ -3,7 +3,7 @@ import { Button, Col, Form, Row } from "react-bootstrap";
 import { Link, useHistory } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { setUser } from "../redux/actions";
-import background from '../img/login.jpg'
+import background from '../img/camping.jpg'
 
 export default function Login() {
   const [form, setForm] = useState({
@@ -76,7 +76,7 @@ export default function Login() {
       backgroundSize: 'cover',
       minHeight: '900px'
      }}>
-      <h1 style={{color: 'white'}}>Log In</h1>
+      <h1 style={{color: 'black'}}>Log In</h1>
         <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
         <Form onSubmit={handleSubmit} style={{
               color: 'whitesmoke',
