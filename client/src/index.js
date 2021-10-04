@@ -9,6 +9,8 @@ import BaseLayout from './components/BaseLayout';
 import { Provider } from 'react-redux'
 import Login from './pages/Login';
 import store from './redux/store';
+import Register from './pages/Register';
+import Game from './pages/Game';
 
 
 
@@ -24,7 +26,9 @@ ReactDOM.render(
           <Route exact path='/' component={HomePage} />
           <Route path='/weather' component={Weather} />
           <Route path='/videosearch' component={VideoSearch} />
+          <Route path='/game' component={Game} />
           <Route path='/login' component={Login} />
+          <Route path='/register' component={Register} />
         </Switch>
       </BaseLayout>
     </BrowserRouter>
